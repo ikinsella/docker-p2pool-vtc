@@ -16,7 +16,6 @@ RUN chmod a+x /usr/local/bin/* && \
 
 VOLUME ["/data"]
 ENV HOME /data
-ENV DATA /data
 WORKDIR /data
 
 EXPOSE 9171 9346

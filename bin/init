@@ -1,10 +1,10 @@
 #!/bin/bash
 
-CONF=${DATA}/p2pool.conf
+CONF=${HOME}/p2pool.conf
 
 if [ ! -e "${CONF}" ]; then
   echo "--net vertcoin
---bitcoind-config-path ${DATA}
+--bitcoind-config-path ${HOME}
 --bitcoind-address 127.0.0.1
 --bitcoind-rpc-port 8332" > "${CONF}"
 fi
