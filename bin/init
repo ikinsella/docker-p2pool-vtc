@@ -6,7 +6,7 @@ if [ ! -e "${CONF}" ]; then
   echo "--net vertcoin
 --bitcoind-config-path ${HOME}
 --bitcoind-address 127.0.0.1
---bitcoind-rpc-port 5889" > "${CONF}"
+--bitcoind-rpc-port 5888" > "${CONF}"
 fi
 
 exec python /p2pool-vtc/run_p2pool.py @$CONF
